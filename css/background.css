@@ -9,9 +9,13 @@ html{
   color:white;
   position:fixed;
   bottom:0;
+  width:100%;
 }
 .nav-wrapper{
   background-color:black;
+}
+.righty{
+  text-align:right;
 }
 .colors > div{
   width:15px;
