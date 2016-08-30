@@ -1,0 +1,23 @@
+html{
+  background:black;
+  height:100%;
+}
+.container{
+  color:white;
+}
+.footer{
+  color:white;
+  position:fixed;
+  bottom:0;
+}
+.nav-wrapper{
+  background-color:black;
+}
+.colors > div{
+  width:15px;
+  height:15px;
+  display:inline-block;
+}
+.patterns > img{
+  width:50px;
+}
