@@ -9,4 +9,7 @@ $(document).ready(function(){
     $('html').css('background', `url(${$(this).attr('src')}) repeat`)
     console.log($('html').css('background'));
   })
+  $('.next').click(function(){
+    localStorage.setItem('background-color', $('html').css('background'));
+  })
 })
