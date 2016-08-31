@@ -35,9 +35,9 @@ $(document).ready(function(){
     $('.bigTitle').children()[0].style.fontSize= '4.2rem';
   })
   $('.prev').click(function(){
-    localStorage.setItem('storedTitle', $('.store').get(0));
+    localStorage.setItem('storedTitle', $('.store').get(0).innerHTML);
   })
   $('.next').click(function(){
-    localStorage.setItem('storedTitle', $('.store').get(0));
+    localStorage.setItem('storedTitle', $('.store').get(0).innerHTML);
   })
 })

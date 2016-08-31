@@ -1,0 +1,19 @@
+html{
+  background:black;
+  height:100%;
+}
+.nav-wrapper{
+  background-color:black;
+}
+.container{
+  color:white;
+}
+.footer{
+  color:white;
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+.righty{
+  text-align:right;
+}
