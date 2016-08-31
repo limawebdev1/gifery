@@ -9,8 +9,38 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script type="text/javascript" src="js/final.js"></script>
+  <script>
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));
+  </script>
 </head>
+
 <body>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <nav>
     <div class="nav-wrapper">
       <a href="index.html" class="brand-logo">GIFery</a>
@@ -26,7 +56,10 @@
   <div class="container message">
   </div>
   <div class="row footer">
-    
+    <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Flimawebdev1-q1proj.surge.sh%2Ffinal.html&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden"
+        scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=http://limawebdev1-q1proj.surge.sh/final.html" data-size="default">
+Tweet</a>
   </div>
 </body>
 
