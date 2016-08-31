@@ -5,6 +5,9 @@ html{
 .container{
   color:white;
 }
+nav .brand-logo{
+  margin-left:1%;
+}
 .footer{
   color:white;
   position:fixed;
