@@ -8,3 +8,40 @@ html{
 .container{
   color:white;
 }
+.footer{
+  color:white;
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+.righty{
+  text-align:right;
+}
+@font-face{
+  font-family: CookieMonster;
+  src: url(../fonts/CookieMonster.ttf)
+}
+@font-face{
+  font-family: Digitalt;
+  src: url(../fonts/Digitalt.ttf)
+}
+@font-face{
+  font-family: KCFonts;
+  src: url(../fonts/KCFonts.ttf)
+}
+@font-face{
+  font-family: MonaShark;
+  src: url(../fonts/monashark.otf)
+}
+@font-face{
+  font-family: TimeBurner;
+  src: url(../fonts/timeburnernormal.ttf)
+}
+@font-face{
+  font-family: Trench;
+  src: url(../fonts/trench100free.ttf)
+}
+@font-face{
+  font-family: VarianeScript;
+  src: url(../fonts/VarianeScript.ttf)
+}
