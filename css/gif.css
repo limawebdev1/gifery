@@ -2,18 +2,55 @@ html{
   background:black;
   height:100%;
 }
-.nav-wrapper{
-  background-color:black;
+body{
+  height:100%;
+}
+@font-face{
+  font-family:Gochi;
+  src:url(../fonts/Gochi.ttf);
+}
+.big{
+  border-right:1px solid white;
+  border-left:1px solid white;
 }
 .container{
   color:white;
+  background-color:black;
+  min-height:100%;
 }
-.footer{
-  color:white;
-  position:fixed;
-  bottom:0;
+h1{
+  font-family:Gochi;
+}
+h5{
+  font-family: Courier New;
+}
+nav .brand-logo{
+  margin-left:1%;
+  width:50px;
+  height:50px;
+}
+.logo{
+  margin-top:25%;
   width:100%;
 }
-.righty{
-  text-align:right;
+.nav-wrapper{
+  background-color:black;
+}
+.leftarr{
+  position:fixed;
+  top:45%;
+  left:15px;;
+  color:white;
+  font-size:50px;
+}
+.rightarr{
+  position:fixed;
+  top:45%;
+  right:15px;;
+  color:white;
+  font-size:50px;
+}
+a{
+  text-decoration:none;
+  color:white;
 }

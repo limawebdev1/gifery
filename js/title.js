@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var fontArray = ['Times New Roman', 'Arial', 'Courier', 'Garamond', 'CookieMonster', 'Digitalt', 'KCFonts', 'MonaShark', 'TimeBurner', 'Trench', 'VarianeScript'];
+  var fontArray = ['Times New Roman', 'Arial', 'Courier', 'Garamond', 'CookieMonster', 'Digitalt', 'KCFonts', 'Headliner', 'Fashion', 'Hugs', 'PassionTea', 'Fizzo', 'CookieDough', 'Basterds', 'TimeBurner', 'Trench', 'VarianeScript'];
   var selectedFont = 'Roboto';
   $('.modal-trigger').leanModal();
   var background = localStorage.getItem('background-color')
@@ -10,13 +10,22 @@ $(document).ready(function(){
   $('.modal-trigger').click(function(){
     $('.modal-content').children('h5').remove();
     for(var i = 0; i < fontArray.length; i++){
-      var h5 = document.createElement('h5');
-      $(h5).css('font-family', fontArray[i]);
-      h5.innerText = $('.bigTitle').children()[0].innerText
-      $('.modal-content').append(h5);
+      var a = document.createElement('a');
+      $(a).addClass('collection-item');
+      $(a).attr('href', '#!');
+      a.innerHTML = $('.bigTitle').children()[0].innerText;
+      $(a).css('font-family', fontArray[i]);
+      $(a).css('font-size', '2em');
+      $(a).css('color', 'black');
+      $('.collection').append(a);
     }
   })
-  $('.modal-content').on('click', 'h5', function(event){
+  $('.collection').on('click', 'a', function(event){
+    $(this).css('background-color', 'rgb(186, 186, 186)');
+    $(this).prevAll().css('background-color','white');
+    $(this).nextAll().css('background-color','white');
+  })
+  $('.modal-content').on('click', 'a', function(event){
     selectedFont = $(this).css('font-family');
   })
   $('.modal-action').click(function(event){
@@ -26,7 +35,7 @@ $(document).ready(function(){
     $('.bigTitle').children()[0].style.color = $(this).val();
   })
   $('.one').click(function(){
-    $('.bigTitle').children()[0].style.fontSize= '2rem';
+    $('.bigTitle').children()[0].style.fontSize= '3rem';
   })
   $('.two').click(function(){
     $('.bigTitle').children()[0].style.fontSize= '3.56rem';
@@ -34,10 +43,7 @@ $(document).ready(function(){
   $('.three').click(function(){
     $('.bigTitle').children()[0].style.fontSize= '4.2rem';
   })
-  $('.prev').click(function(){
-    localStorage.setItem('storedTitle', $('.store').get(0).innerHTML);
-  })
-  $('.next').click(function(){
+  $('.rightarr').click(function(){
     localStorage.setItem('storedTitle', $('.store').get(0).innerHTML);
   })
 })
