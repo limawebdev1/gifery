@@ -10,24 +10,17 @@ body{
   src:url(../fonts/Gochi.ttf);
 }
 .container{
-  padding:3%;
-  padding-bottom:0;
   color:white;
-  border: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  background-color:black;
+  min-height:100%;
 }
 h1{
   font-family:Gochi;
 }
-.from{
-  margin-top:15%;
-  font-family:Courier New;
-}
-.to{
-  margin-bottom:10%;
-  font-family:Courier New;
-}
-.stamp{
-  width:70%;
+h5{
+  font-family: Courier New;
 }
 nav .brand-logo{
   margin-left:1%;
@@ -38,23 +31,36 @@ nav .brand-logo{
   margin-top:25%;
   width:100%;
 }
-.footer{
-  color:white;
-  position:fixed;
-  bottom:0;
-  width:100%;
-}
 .nav-wrapper{
   background-color:black;
 }
-.righty{
-  text-align:right;
+.leftarr{
+  position:fixed;
+  top:45%;
+  left:15px;;
+  color:white;
+  font-size:50px;
 }
+.rightarr{
+  position:fixed;
+  top:45%;
+  right:15px;;
+  color:white;
+  font-size:50px;
+}
+a{
+  text-decoration:none;
+  color:white;
+}
+
 .colors > div{
-  width:15px;
-  height:15px;
+  margin-left:1px;
+  margin-right:1px;
+  width:35px;
+  height:35px;
   display:inline-block;
 }
 .patterns > img{
   width:50px;
+  height:50px;
 }
