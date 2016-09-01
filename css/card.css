@@ -9,6 +9,19 @@ body{
   font-family:Gochi;
   src:url(../fonts/Gochi.ttf);
 }
+nav .brand-logo{
+  margin-left:1%;
+  width:50px;
+  height:50px;
+}
+.nav-wrapper{
+  background-color:black;
+}
+
+.logo{
+  margin-top:25%;
+  width:100%;
+}
 .container{
   padding:3%;
   padding-bottom:0;
@@ -29,32 +42,17 @@ h1{
 .stamp{
   width:70%;
 }
-nav .brand-logo{
-  margin-left:1%;
-  width:50px;
-  height:50px;
+#first_name{
+  font-size:1.5rem;
 }
-.logo{
-  margin-top:25%;
-  width:100%;
-}
-.footer{
-  color:white;
+.rightarr{
   position:fixed;
-  bottom:0;
-  width:100%;
+  top:45%;
+  right:15px;;
+  color:white;
+  font-size:50px;
 }
-.nav-wrapper{
-  background-color:black;
-}
-.righty{
-  text-align:right;
-}
-.colors > div{
-  width:15px;
-  height:15px;
-  display:inline-block;
-}
-.patterns > img{
-  width:50px;
+a{
+  text-decoration:none;
+  color:white;
 }
