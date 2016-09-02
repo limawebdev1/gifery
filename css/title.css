@@ -53,16 +53,12 @@ nav .brand-logo{
   background-color:black;
 }
 .leftarr{
-  position:fixed;
-  top:45%;
-  left:15px;;
+  margin-left:2%;
   color:white;
   font-size:50px;
 }
 .rightarr{
-  position:fixed;
-  top:45%;
-  right:15px;;
+  margin-right:2%;
   color:white;
   font-size:50px;
 }

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  Materialize.toast(`Fill in your custom title <br> And play around with colors and fonts! <br> Hit the RIGHT arrow when you're ready!`, 4000);
   var fontArray = ['Times New Roman', 'Arial', 'Courier', 'Garamond', 'CookieMonster', 'Digitalt', 'KCFonts', 'Headliner', 'Fashion', 'Hugs', 'PassionTea', 'Fizzo', 'CookieDough', 'Basterds', 'TimeBurner', 'Trench', 'VarianeScript'];
   var selectedFont = 'Roboto';
   $('.modal-trigger').leanModal();
@@ -45,5 +46,8 @@ $(document).ready(function(){
   })
   $('.rightarr').click(function(){
     localStorage.setItem('storedTitle', $('.store').get(0).innerHTML);
+  })
+  $('.halp').click(function(){
+    Materialize.toast(`Fill in your custom title <br> And play around with colors and fonts! <br> Hit the RIGHT arrow when you're ready!`, 4000);
   })
 })

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  Materialize.toast(`Select a COLOR or PATTERN! <br/> Hit the RIGHT arrow button to go to the next step!`, 4500);
   $('.colors').children().each(function(event){
     $(this).css('background-color', $(this).attr('class'));
   })
@@ -11,5 +12,8 @@ $(document).ready(function(){
   })
   $('.rightarr').click(function(){
     localStorage.setItem('background-color', $('html').css('background'));
+  })
+  $('.halp').click(function(){
+      Materialize.toast(`Select a COLOR or PATTERN! <br/> Hit the RIGHT arrow button to go to the next step!`, 3000);
   })
 })

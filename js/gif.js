@@ -1,4 +1,8 @@
 $(document).ready(function(){
+  Materialize.toast(`Search for GIFs and CLICK on them <br/> to add the ones you want to your message!`, 4000);
+  $('.halp').click(function(){
+    Materialize.toast(`Search for GIFs and CLICK on them <br/> to add the ones you want to your message!`, 4000);
+  })
   var gifArr = [];
   $('html').css('background', localStorage.getItem('background-color'));
   $('.store').append(localStorage.getItem('storedTitle'));
