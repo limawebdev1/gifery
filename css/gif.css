@@ -36,6 +36,45 @@ nav .brand-logo{
 .nav-wrapper{
   background-color:black;
 }
+input{
+  font-family:Courier New;
+}
+.gifSearch{
+  padding-bottom:2%;
+}
+.heading{
+  display:none;
+  font-family:Gochi;
+}
+.popGIF{
+  display:none;
+  height:400px;
+  overflow:scroll !important;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+.popGIF img{
+  width:20%;
+  padding:1%;
+  border-radius:5px;
+}
+.giffage img{
+  width:25%;
+  padding:1%;
+  border-radius:5px;
+}
+.giffery{
+  border:1px solid white;
+  padding:2%;
+  border-radius:5px;
+}
 .leftarr{
   position:fixed;
   top:45%;

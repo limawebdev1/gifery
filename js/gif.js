@@ -2,12 +2,13 @@ $(document).ready(function(){
   var gifArr = [];
   $('html').css('background', localStorage.getItem('background-color'));
   $('.store').append(localStorage.getItem('storedTitle'));
-  $('.btn').click(function(event){
+  $('input').keyup(function(event){
     event.preventDefault();
     if($('#gifSearch').val() === ''){
-      Materialize.toast('You left the search field blank!', 4000);
     }else{
+      $('.heading').css('display','block');
       $('.popGIF').html('');
+      $('.popGIF').css('display','block');
       var input = $('#gifSearch').val();
       gifArr = [];
       $.ajax({
@@ -41,10 +42,7 @@ $(document).ready(function(){
     img.src = this.src;
     $('.giffage').append(img);
   })
-  $('.next').click(function(){
-    localStorage.setItem('giffery', $('.giffery').html())
-  })
-  $('.prev').click(function(){
+  $('.rightarr').click(function(){
     localStorage.setItem('giffery', $('.giffery').html())
   })
 });
