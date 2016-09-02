@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Add Some Text</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <link rel="stylesheet" href="css/font.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/message.css" media="screen" charset="utf-8">
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
@@ -13,34 +14,31 @@
 <body>
   <nav>
     <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo">GIFery</a>
+      <a href="index.html" class="brand-logo"><img src="img/logo.png" class="logo" /></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="sass.html"><i class="material-icons">info_outline</i></a></li>
       </ul>
     </div>
   </nav>
-  <div class="container store">
+  <div class="leftarr">
+    <a href="gif.html">&#8678;</a>
   </div>
-  <div class="container giffery">
+  <div class="rightarr">
+    <a href="final.html">&#8680;</a>
   </div>
-  <div class="container message">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s8">
-          <textarea id="textarea1" placeholder="Write your message here!" class="materialize-textarea"></textarea>
-        </div>
-        <div class="col s4">
-
-        </div>
-      </div>
-    </form>
-  </div>
-  <div class="row footer">
-    <div class="lefty col s6">
-      <a class="prev" href="gif.html"><h1>&#x21E6;</h1></a>
+  <div class="container center-align">
+    <div class="container store">
     </div>
-    <div class="righty col s6">
-      <a class="next" href="final.html"><h1>&#x21E8;</h1></a>
+    <div class="container giffery">
+    </div>
+    <div class="container message">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" placeholder="Write your message here!" class="materialize-textarea"></textarea>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </body>
